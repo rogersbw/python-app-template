@@ -16,6 +16,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     'mypy',
+    'pip-tools',
     'pre-commit',
     'pytest',
     'ruff',
