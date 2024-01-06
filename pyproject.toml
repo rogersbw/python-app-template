@@ -24,12 +24,15 @@ dev = [
     'ruff',
 ]
 
-[tools.setuptools]
-packages = ['pythonapp']
+[project.entry-points.'console_scripts']
+pythonapp = 'pythonapp.app:main'
 
 [build-system]
 # Minimum requirements for the build system to execute.
-requires = ['setuptools', 'wheel']  # PEP 508 specifications.
+requires = ['setuptools', 'wheel']
+
+[tools.setuptools]
+packages = ['pythonapp']
 
 [tool.ruff]
 line-length = 120
