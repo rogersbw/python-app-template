@@ -54,6 +54,8 @@ ruff==0.1.11
     # via python-app-template (pyproject.toml)
 six==1.16.0
     # via python-dateutil
+toml==0.10.2
+    # via python-app-template (pyproject.toml)
 tomli==2.0.1
     # via
     #   build

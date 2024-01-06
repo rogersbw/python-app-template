@@ -11,6 +11,7 @@ classifiers = [
 dynamic = ['version']
 
 dependencies = [
+    'toml'
 ]
 
 [project.optional-dependencies]
@@ -33,6 +34,10 @@ requires = ['setuptools', 'wheel']
 
 [tools.setuptools]
 packages = ['pythonapp']
+
+[tool.pythonapp]
+# to write json-formatted logs to disk, uncomment the following line specify the file location
+# log_file = '/Users/you/logs/pythonapp.log'
 
 [tool.ruff]
 line-length = 120
