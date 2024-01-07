@@ -9,10 +9,10 @@ import toml
 class JsonFormatter(logging.Formatter):
     """JSON log formatter."""
 
-    def format(self, record):
+    def format(self, record: logging.LogRecord) -> str:
         log_dict = record.__dict__.copy()
 
-        log_dict['args'] = [str(arg) for arg in record.args]
+        log_dict['args'] = [str(arg) for arg in record.args or []]
         log_dict['msg'] = record.getMessage()
 
         # if there's exception info, include it

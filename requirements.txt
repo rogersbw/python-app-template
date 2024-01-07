@@ -63,6 +63,8 @@ tomli==2.0.1
     #   pip-tools
     #   pyproject-hooks
     #   pytest
+types-toml==0.10.8.7
+    # via python-app-template (pyproject.toml)
 typing-extensions==4.9.0
     # via mypy
 virtualenv==20.25.0

@@ -23,6 +23,7 @@ dev = [
     'pre-commit',
     'pytest',
     'ruff',
+    'types-toml',
 ]
 
 [project.entry-points.'console_scripts']
@@ -37,7 +38,7 @@ packages = ['pythonapp']
 
 [tool.pythonapp]
 # to write json-formatted logs to disk, uncomment the following line specify the file location
-# log_file = '/Users/you/logs/pythonapp.log'
+log_file = '/Users/becky/logs/pythonapp.log'
 
 [tool.ruff]
 line-length = 120
