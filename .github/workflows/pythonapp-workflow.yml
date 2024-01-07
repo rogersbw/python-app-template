@@ -26,3 +26,10 @@ jobs:
       - name: run tests
         run: |
            pytest
+  check-requirements:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: compare requirements to pyproject dependencies
+        run: |
+          echo 'not implemented'
