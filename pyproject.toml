@@ -35,7 +35,7 @@ requires = ['setuptools', 'wheel']
 [tools.setuptools]
 packages = ['python_app']
 
-[tool.python-app]
+[tool.python_app]
 # to write json-formatted logs to disk, uncomment the following line specify the file location
 # log_file = '/Users/becky/logs/python_app.log'
 
