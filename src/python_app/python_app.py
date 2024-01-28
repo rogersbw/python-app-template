@@ -1,13 +1,13 @@
 import logging
 
-from pythonapp.util.date import get_current_date
-from pythonapp.util.logs import LoggerSetup
+from python_app.util.date import get_current_date
+from python_app.util.logs import LoggerSetup
 
 
 def main():
     """Application entry point."""
 
-    LoggerSetup('pythonapp').init_logger()
+    LoggerSetup('python_app').init_logger()
     logger = logging.getLogger(__name__)
 
     logger.info('formatting the date')

@@ -1,6 +1,6 @@
 [project]
-name = 'python-app-template'
-description = 'Boilerplate for Python applications'
+name = 'python-app'
+description = 'PDM template for simple Python applications'
 license = {text = 'MIT License'}
 readme = 'README.md'
 requires-python = '>=3.10'
@@ -26,18 +26,18 @@ dev = [
 ]
 
 [project.entry-points.'console_scripts']
-pythonapp = 'pythonapp.app:main'
+python_app = 'python_app.app:main'
 
 [build-system]
 # Minimum requirements for the build system to execute.
 requires = ['setuptools', 'wheel']
 
 [tools.setuptools]
-packages = ['pythonapp']
+packages = ['python_app']
 
-[tool.pythonapp]
+[tool.python-app]
 # to write json-formatted logs to disk, uncomment the following line specify the file location
-log_file = '/Users/becky/logs/pythonapp.log'
+# log_file = '/Users/becky/logs/python_app.log'
 
 [tool.ruff]
 line-length = 120
@@ -47,4 +47,4 @@ extend-select = ['I']
 quote-style = 'single'
 
 [tool.setuptools.dynamic]
-version = {attr = 'pythonapp.__version__'}
+version = {attr = 'python_app.__version__'}

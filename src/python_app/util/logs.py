@@ -49,7 +49,7 @@ class LoggerSetup:
         # if app config specifies a log file, add a handler for it and
         # format the log entries as JSON
         config = toml.load(self.config_file)
-        log_file = config.get('tool', {}).get('pythonapp', {}).get('log_file')
+        log_file = config.get('tool', {}).get('python_app', {}).get('log_file')
         if log_file:
             log_path = self.create_log_file(log_file)
             handler = logging.FileHandler(log_path)

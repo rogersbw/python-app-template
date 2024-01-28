@@ -3,7 +3,7 @@ import logging
 
 import pytest
 import toml
-from pythonapp.util.logs import LoggerSetup
+from python_app.util.logs import LoggerSetup
 
 
 @pytest.fixture()
@@ -28,7 +28,7 @@ def app_config_with_logfile(tmp_path):
 
     # create an app config that specifies a log file
     with open(str(app_config_file), 'w') as f:
-        toml.dump({'tool': {'pythonapp': {'log_file': str(app_log_file)}}}, f)
+        toml.dump({'tool': {'python_app': {'log_file': str(app_log_file)}}}, f)
 
     return app_config_file, app_log_file
 
