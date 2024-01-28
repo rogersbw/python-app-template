@@ -19,7 +19,6 @@ dev = [
     'coverage',
     'freezegun',
     'mypy',
-    'pip-tools',
     'pre-commit',
     'pytest',
     'ruff',

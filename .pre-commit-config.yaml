@@ -23,10 +23,3 @@ repos:
     hooks:
     -   id: mypy
         additional_dependencies: [types-all]
-- repo: https://github.com/jazzband/pip-tools
-  rev: 7.3.0
-  hooks:
-    - id: pip-compile
-      name: pip-compile
-      args: [--extra, dev, -o, requirements.txt, pyproject.toml]
-      files: ^(setup\.py|requirements\.txt|pyproject\.toml)$
