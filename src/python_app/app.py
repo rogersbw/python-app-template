@@ -14,8 +14,13 @@ def main():
     today = get_current_date()
     logger.info('retrieved the date: %s', today)
 
-    print(f'Today is {today}.')
+    return today
+
+
+def say_hello():
+    return 'howdy'
 
 
 if __name__ == '__main__':
-    main()
+    today = main()
+    print(f'Today is {today}.')
