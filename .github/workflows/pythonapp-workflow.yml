@@ -3,6 +3,7 @@ run-name: ${{ github.action }} triggered by ${{ github.event_name }} from ${{ gi
 on: [push]
 jobs:
   run-checks:
+    if: github.repository != 'bsweger/python-app-template'  # skip checks for the template repo, can be removed
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
