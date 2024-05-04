@@ -1,6 +1,6 @@
 [project]
 name = 'python-app'
-description = 'PDM template for simple Python applications'
+description = 'Python application template for personal use'
 license = {text = 'MIT License'}
 readme = 'README.md'
 requires-python = '>=3.10'
@@ -11,6 +11,8 @@ classifiers = [
 dynamic = ['version']
 
 dependencies = [
+    'structlog',
+    'rich',
     'toml'
 ]
 
@@ -41,7 +43,10 @@ packages = ['python_app']
 
 [tool.ruff]
 line-length = 120
-lint.extend-select = ['I']
+lint.extend-select = ['I', 'Q']
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = 'single'
 
 [tool.ruff.format]
 quote-style = 'single'
