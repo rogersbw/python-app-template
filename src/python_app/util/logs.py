@@ -30,7 +30,11 @@ def setup_logging():
         ]
     else:
         # Otherwise, output logs in JSON format
-        processors = shared_processors + [structlog.processors.dict_tracebacks, structlog.processors.JSONRenderer()]
+        processors = shared_processors + [
+            structlog.processors.dict_tracebacks,
+            structlog.processors.JSONRenderer(),
+        ]
+
 
     structlog.configure(
         processors=processors,

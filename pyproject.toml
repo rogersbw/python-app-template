@@ -12,6 +12,7 @@ dynamic = ['version']
 
 dependencies = [
     'structlog',
+    'rich',
     'toml'
 ]
 

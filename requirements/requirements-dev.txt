@@ -18,6 +18,10 @@ identify==2.5.36
     # via pre-commit
 iniconfig==2.0.0
     # via pytest
+markdown-it-py==3.0.0
+    # via rich
+mdurl==0.1.2
+    # via markdown-it-py
 mypy==1.10.0
     # via python-app (pyproject.toml)
 mypy-extensions==1.0.0
@@ -32,12 +36,16 @@ pluggy==1.5.0
     # via pytest
 pre-commit==3.7.0
     # via python-app (pyproject.toml)
+pygments==2.18.0
+    # via rich
 pytest==8.2.0
     # via python-app (pyproject.toml)
 python-dateutil==2.9.0.post0
     # via freezegun
 pyyaml==6.0.1
     # via pre-commit
+rich==13.7.1
+    # via python-app (pyproject.toml)
 ruff==0.4.3
     # via python-app (pyproject.toml)
 six==1.16.0
