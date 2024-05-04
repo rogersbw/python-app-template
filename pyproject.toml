@@ -11,6 +11,7 @@ classifiers = [
 dynamic = ['version']
 
 dependencies = [
+    'structlog',
     'toml'
 ]
 

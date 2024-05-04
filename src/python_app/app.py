@@ -1,16 +1,15 @@
-import logging
+import structlog
 
 from python_app.util.date import get_current_date
-from python_app.util.logs import LoggerSetup
+from python_app.util.logs import setup_logging
+
+setup_logging()
+logger = structlog.get_logger()
 
 
 def main():
     """Application entry point."""
 
-    LoggerSetup('python_app').init_logger()
-    logger = logging.getLogger(__name__)
-
-    logger.info('formatting the date')
     today = get_current_date()
     logger.info('retrieved the date: %s', today)
 

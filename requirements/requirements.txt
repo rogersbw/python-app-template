@@ -4,5 +4,7 @@
 #
 #    pip-compile --output-file=requirements/requirements.txt
 #
+structlog==24.1.0
+    # via python-app (pyproject.toml)
 toml==0.10.2
     # via python-app (pyproject.toml)
