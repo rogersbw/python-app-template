@@ -16,8 +16,7 @@ jobs:
           pip install -r requirements/requirements-dev.txt -e .
       - name: lint
         run: |
-           ruff . --fix
-           ruff format .
+           ruff check .
       - name: type check
         run: |
            mypy .
