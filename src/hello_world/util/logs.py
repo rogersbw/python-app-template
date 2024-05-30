@@ -2,11 +2,11 @@ import sys
 
 import structlog
 
-import python_app
+import hello_world
 
 
 def add_custom_info(logger, method_name, event_dict):
-    event_dict['version'] = python_app.__version__
+    event_dict['version'] = hello_world.__version__
     return event_dict
 
 
@@ -24,7 +24,7 @@ def setup_logging():
     ]
 
     if sys.stderr.isatty():
-        # If we're in a terminal, pretty pring the logs.
+        # If we're in a terminal, pretty print the logs.
         processors = shared_processors + [
             structlog.dev.ConsoleRenderer(),
         ]
@@ -34,7 +34,6 @@ def setup_logging():
             structlog.processors.dict_tracebacks,
             structlog.processors.JSONRenderer(),
         ]
-
 
     structlog.configure(
         processors=processors,

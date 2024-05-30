@@ -28,18 +28,18 @@ dev = [
 ]
 
 [project.entry-points.'console_scripts']
-python_app = 'python_app.app:main'
+hello_world = 'hello_world.app:main'
 
 [build-system]
 # Minimum requirements for the build system to execute.
 requires = ['setuptools', 'wheel']
 
 [tools.setuptools]
-packages = ['python_app']
+packages = ['hello_world']
 
-[tool.python_app]
+[tool.hello_world]
 # to write json-formatted logs to disk, uncomment the following line specify the file location
-# log_file = '/Users/becky/logs/python_app.log'
+# log_file = '/Users/becky/logs/hello_world.log'
 
 [tool.ruff]
 line-length = 120
@@ -52,4 +52,4 @@ inline-quotes = 'single'
 quote-style = 'single'
 
 [tool.setuptools.dynamic]
-version = {attr = 'python_app.__version__'}
+version = {attr = 'hello_world.__version__'}
