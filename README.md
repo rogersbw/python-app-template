@@ -13,7 +13,7 @@ pip install git+https://github.com/bsweger/python-app-template.git
 
 To run it:
 ```bash
-python_app
+hello_world
 ```
 
 ## Setup for local development
@@ -31,7 +31,7 @@ The assumption is that app developers will be using a Python virtual environment
 1. Clone this repository
 2. Change to the repo's root directory:
 
-    ````bash
+    ```bash
     cd python-app-template
     ```
 3. Make sure the correct version of Python is currently active, and create a Python virtual environment:
