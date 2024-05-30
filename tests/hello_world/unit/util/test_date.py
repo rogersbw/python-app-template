@@ -1,7 +1,7 @@
 """Unit tests for the date module."""
 
 from freezegun import freeze_time
-from python_app.util.date import get_current_date
+from hello_world.util.date import get_current_date
 
 
 @freeze_time('2024-01-02')
