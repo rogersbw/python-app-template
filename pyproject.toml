@@ -3,7 +3,7 @@ name = 'python-app'
 description = 'Python application template for personal use'
 license = {text = 'MIT License'}
 readme = 'README.md'
-requires-python = '>=3.8'
+requires-python = '>=3.11'
 classifiers = [
     'Programming Language :: Python :: 3',
     'License :: OSI Approved :: MIT License',
@@ -13,7 +13,6 @@ dynamic = ['version']
 dependencies = [
     'structlog',
     'rich',
-    'toml'
 ]
 
 [project.optional-dependencies]
@@ -24,7 +23,6 @@ dev = [
     'pre-commit',
     'pytest',
     'ruff',
-    'types-toml',
 ]
 
 [project.entry-points.'console_scripts']
@@ -39,7 +37,7 @@ packages = ['hello_world']
 
 [tool.hello_world]
 # to write json-formatted logs to disk, uncomment the following line specify the file location
-# log_file = '/Users/becky/logs/hello_world.log'
+# log_file = '/path/to/logs/files/hello_world.log'
 
 [tool.ruff]
 line-length = 120
