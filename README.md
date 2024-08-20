@@ -116,3 +116,5 @@ The Python ecosystem is overwhelming! Current opinionated preferences, subject t
 - To install dependencies: uv again (again, mostly due to speed; good old pip is another fine option)
 - Logging: [structlog](https://www.structlog.org/en/stable/). I recently stopped fighting Python's built-in logging module and haven't looked back.
 - Linting and formatting: [ruff](https://github.com/astral-sh/ruff) because it does both and is fast.
+
+This is a test of the ruleset.
