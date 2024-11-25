@@ -15,7 +15,7 @@ dependencies = [
     'rich',
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
     'coverage',
     'freezegun',
