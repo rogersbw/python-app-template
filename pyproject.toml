@@ -3,7 +3,7 @@ name = 'python-app'
 description = 'Python application template for personal use'
 license = {text = 'MIT License'}
 readme = 'README.md'
-requires-python = '>=3.11'
+requires-python = '>=3.9'
 classifiers = [
     'Programming Language :: Python :: 3',
     'License :: OSI Approved :: MIT License',
@@ -22,8 +22,12 @@ dev = [
     'mypy',
     'pre-commit',
     'pytest',
+    "pytest-random-order>=1.1.1",
     'ruff',
 ]
+
+[project.urls]
+Repository = "https://github.com/bsweger/python-app-template.git"
 
 [project.entry-points.'console_scripts']
 hello_world = 'hello_world.app:main'
@@ -38,6 +42,13 @@ packages = ['hello_world']
 [tool.hello_world]
 # to write json-formatted logs to disk, uncomment the following line specify the file location
 # log_file = '/path/to/logs/files/hello_world.log'
+
+[tool.pytest.ini_options]
+addopts = "--random-order"
+tmp_path_retention_policy = "none"
+testpaths = [
+    "tests",
+]
 
 [tool.ruff]
 line-length = 120
