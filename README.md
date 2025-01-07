@@ -8,7 +8,7 @@ keep it up to date as my Python workflow and tooling preferences evolve.
 To install this package via pip:
 
 ```bash
-pip install git+https://github.com/bsweger/python-app-template.git
+pip install git+https://github.com/rogersbw/python-app-template.git
 ```
 
 To run it:
